@@ -6,7 +6,7 @@ function App() {
 
   useEffect(() => {
     // We fetch from our Node server (Port 5000)
-    fetch('http://localhost:5000/api/test')
+    fetch('https://sis-hackathon-2026.vercel.app/api/test')
       .then(res => res.json())
       .then(data => setMessage(data.message))
       .catch(err => setMessage("Error: Backend not reached!"))
